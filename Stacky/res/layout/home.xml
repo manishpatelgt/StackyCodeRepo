@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        android:gravity="center"
+        android:weightSum="4">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:minHeight="120dp">
+
+            <Button
+                android:id="@+id/CustomerButton"
+                style="@style/MainMenuButton"
+                android:background="@drawable/selector"
+                android:onClick="mainMenuButtonClick"
+                android:text="Button1"
+                android:textSize="30dp" />
+
+            <Button
+                android:id="@+id/essButton"
+                style="@style/MainMenuButton"
+                android:background="@drawable/selector"
+                android:enabled="false"
+                android:onClick="mainMenuButtonClick"
+                android:text="Button2"
+                android:textSize="30dp" />
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:minHeight="120dp">
+
+            <Button
+                android:id="@+id/crmButton"
+                style="@style/MainMenuButton"
+                android:background="@drawable/selector"
+                android:enabled="false"
+                android:onClick="mainMenuButtonClick"
+                android:text="Button3"
+                android:textSize="30dp" />
+
+
+            <Button
+                android:id="@+id/followupButton"
+                style="@style/MainMenuButton"
+                android:background="@drawable/selector"
+                android:enabled="false"
+                android:onClick="mainMenuButtonClick"
+                android:text="Button4"
+                android:textSize="30dp" />
+
+        </TableRow>
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:minHeight="120dp">
+
+            <Button
+                android:id="@+id/aboutusbutton"
+                style="@style/MainMenuButton"
+                android:background="@drawable/selector"
+                android:enabled="true"
+                android:onClick="mainMenuButtonClick"
+                android:text="Button5"
+                android:textSize="30dp" />
+
+            <Button
+                android:id="@+id/logoutbutton"
+                style="@style/MainMenuButton"
+                android:background="@drawable/selector"
+                android:enabled="true"
+                android:onClick="mainMenuButtonClick"
+                android:text="Button6"
+                android:textSize="30dp" />
+
+        </TableRow>
+
+    </TableLayout>
+
+</LinearLayout>

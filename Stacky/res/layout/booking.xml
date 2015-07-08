@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:text="bookin"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingTop="10dp"
+        android:text="bookin_details"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="75dp"
+            android:layout_marginTop="20dp"
+            android:overScrollMode="ifContentScrolls" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="vertical"
+                android:paddingTop="20dp" >
+
+                <!-- Full Name Label -->
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="full_name"
+                    android:textColor="@color/white"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/full_name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="10dip"
+                    android:layout_marginTop="3dip"
+                    android:background="@android:drawable/editbox_background"
+                    android:cursorVisible="true"
+                    android:hint="Enter your full name...."
+                    android:inputType="text"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textCursorDrawable="@null" />
+                <!-- Email Label -->
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="email_add"
+                    android:textColor="@color/White"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/reg_email"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="10dip"
+                    android:layout_marginTop="3dip"
+                    android:background="@android:drawable/editbox_background"
+                    android:cursorVisible="true"
+                    android:hint="Enter your email..."
+                    android:inputType="text"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textCursorDrawable="@null" />
+                <!-- Mobile Number Label -->
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="mobile_no"
+                    android:textColor="@color/White"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/reg_mobile"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="10dip"
+                    android:layout_marginTop="3dip"
+                    android:background="@android:drawable/editbox_background"
+                    android:hint="Enter your mobile number..."
+                    android:textColor="@color/black"
+                    android:textCursorDrawable="@null" />
+                <!-- Date Label -->
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="fitting_date"
+                    android:textColor="@color/White"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/fitting_date"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="10dip"
+                    android:layout_marginTop="3dip"
+                    android:background="@android:drawable/editbox_background"
+                    android:cursorVisible="true"
+                    android:hint="Tap to select date"
+                    android:inputType="date"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textCursorDrawable="@null" />
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:id="@+id/footer"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="0dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="5dp" >
+
+            <Button
+                android:id="@+id/book_fitting"
+                style="@style/ButtonText2"
+                android:layout_width="250dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/shape_fitin"
+                android:text="book_fitting"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/cancel_btn"
+                style="@style/ButtonText2"
+                android:layout_width="100dp"
+                android:layout_height="34dp"
+                android:layout_gravity="center"
+                android:layout_margin="3dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/shape_cancel"
+                android:text="cancel"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>
