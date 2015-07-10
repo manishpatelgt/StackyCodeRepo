@@ -1,0 +1,74 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_activity" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:focusableInTouchMode="true"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/appname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:padding="10dp"
+            android:text="@string/app_name"
+            android:textColor="@color/white"
+            android:textIsSelectable="false"
+            android:textSize="40sp"
+            android:textStyle="bold|italic" />
+
+        <LinearLayout
+            android:id="@+id/layoutLoginEdits"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:animateLayoutChanges="true"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/editTextLoginUser"
+                style="@style/DataEntryTextStyle"
+                android:cursorVisible="true"
+                android:hint="UserName"
+                android:inputType="textNoSuggestions"
+                android:tag="Login"
+                android:text="" />
+
+            <EditText
+                android:id="@+id/editTextLoginPassword"
+                style="@style/DataEntryTextStyle"
+                android:cursorVisible="true"
+                android:hint="Password"
+                android:inputType="textNoSuggestions|textPassword"
+                android:tag="Password"
+                android:text="" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/buttonLogin"
+            style="@style/LargeButton2"
+            android:background="@drawable/selector"
+            android:onClick="loginButtonClick"
+            android:text="@string/sign_in_caps" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:text="@string/version"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:textStyle="bold|italic" />
+
+</RelativeLayout>

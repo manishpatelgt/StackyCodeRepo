@@ -1,0 +1,26 @@
+<resources>
+
+    <string name="app_name">Ordering Neetai</string>
+    <string name="sign_in_caps">Login</string>
+    <string name="sign_out_caps">Logout</string>
+    <string name="version">v1.0</string>
+    <string name="network_must_be_online">You are not connected to WiFi or mobile networks!</string>
+    <string name="login_failed_wrong_credentials">Login failed. Please check your user name and password.</string>
+    <string name="dialog_RetryLogin">Login Check failed. Please re-enter username and password?</string>
+    <string name="mainmenu_order">Place Order</string>
+    <string name="mainmenu_today_order">Todays Orders</string>
+    <string name="mainmenu_pending_order">Pending Orders</string>
+    <string name="mainmenu_order2">All Order</string>
+    <string name="mainmenu_logout">Logout</string>
+    <string name="place_order">Place Order</string>
+    <string name="total_order">All Orders</string>
+    <string name="todays_order">Today Orders</string>
+    <string name="pending_order">Pending Orders</string>
+    <string name="place_item">Add Item in Order</string>
+    <string name="place_item_edit">Edit Item in Order</string>
+    <string name="create_order">Create Order</string>
+    <string name="create_order_now">Order Now</string>
+    <string name="customer_details">Details</string>
+    <string name="place_order_new">Place your Order</string>
+
+</resources>

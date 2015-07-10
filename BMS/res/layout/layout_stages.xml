@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="10dp">
+
+
+    <TextView
+        android:id="@+id/textTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="10dp"
+        android:singleLine="true"
+        android:text="Stage"
+        android:textColor="@color/white"
+        android:textSize="20sp"></TextView>
+
+    <CheckBox
+        android:id="@+id/chk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:checked="true"
+        android:gravity="right|center_vertical" />
+
+
+</RelativeLayout>

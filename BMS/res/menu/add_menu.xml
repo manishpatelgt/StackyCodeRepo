@@ -1,0 +1,18 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="ekawach.ekawacherp.activity.GoogleMapActivity">
+    <item
+        android:id="@+id/action_add"
+        android:orderInCategory="100"
+        android:title="Add"
+        android:icon="@drawable/add_b"
+        app:showAsAction="always" />
+    
+     <item
+        android:id="@+id/action_info"
+        android:orderInCategory="100"
+        android:title="Info"
+        android:icon="@android:drawable/ic_dialog_info"
+        app:showAsAction="always" />
+</menu>

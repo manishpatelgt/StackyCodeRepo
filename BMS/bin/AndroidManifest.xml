@@ -1,0 +1,127 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.order.bms"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
+    <application
+        android:name="com.order.application.BMSAapplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name" >
+        <activity
+            android:name=".activity.Splash"
+            android:configChanges="locale|layoutDirection"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppBaseTheme" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.Login"
+            android:configChanges="locale|layoutDirection"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppBaseTheme" />
+        <activity
+            android:name=".activity.Admin"
+            android:configChanges="locale|layoutDirection"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppBaseTheme" />
+        <activity
+            android:name=".activity.PlaceOrder"
+            android:configChanges="locale|layoutDirection"
+            android:label="@string/place_order"
+            android:parentActivityName=".activity.Admin"
+            android:screenOrientation="portrait"
+            android:theme="@style/CustomActionBarTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activity.Admin" />
+        </activity>
+        <activity
+            android:name=".activity.AllOrderListActivity"
+            android:configChanges="locale|layoutDirection"
+            android:label="@string/total_order"
+            android:parentActivityName=".activity.Admin"
+            android:screenOrientation="portrait"
+            android:theme="@style/CustomActionBarTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activity.Admin" />
+        </activity>
+         <activity
+            android:name=".activity.TodayOrderListActivity"
+            android:configChanges="locale|layoutDirection"
+            android:label="@string/todays_order"
+            android:parentActivityName=".activity.Admin"
+            android:screenOrientation="portrait"
+            android:theme="@style/CustomActionBarTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activity.Admin" />
+        </activity>
+         <activity
+            android:name=".activity.PendingOrderListActivity"
+            android:configChanges="locale|layoutDirection"
+            android:label="@string/pending_order"
+            android:parentActivityName=".activity.Admin"
+            android:screenOrientation="portrait"
+            android:theme="@style/CustomActionBarTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activity.Admin" />
+        </activity>
+        <activity
+            android:name=".activity.PlaceOrder2"
+            android:configChanges="locale|layoutDirection"
+            android:label="@string/place_order"
+            android:parentActivityName=".activity.Admin"
+            android:screenOrientation="portrait"
+            android:theme="@style/CustomActionBarTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activity.Admin" />
+        </activity>
+        <activity
+            android:name=".activity.OrderDialogActivity"
+            android:configChanges="locale|layoutDirection"
+            android:label="@string/place_item"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Dialog" >
+        </activity>
+        <activity
+            android:name=".activity.OrderDialogActivity2"
+            android:configChanges="locale|layoutDirection"
+            android:label="@string/place_item_edit"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Dialog" >
+        </activity>
+        <activity
+            android:name=".activity.ConfirmOrderActivity"
+            android:configChanges="locale|layoutDirection"
+            android:label="@string/place_order_new"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Dialog" >
+        </activity>
+    </application>
+
+</manifest>

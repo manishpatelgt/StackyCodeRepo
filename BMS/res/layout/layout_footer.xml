@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/notes"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/quantity"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/totalamount"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:text="Total Amount"
+                android:textColor="@color/white"
+                android:textIsSelectable="false"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/TotalAmountText"
+                style="@style/DataEntryTextStyle2"
+                android:layout_marginTop="10dp"
+                android:background="@android:drawable/editbox_background_normal"
+                android:cursorVisible="false"
+                android:editable="false"
+                android:hint="Total Amount" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/remark"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:text="Remark"
+                android:textColor="@color/white"
+                android:textIsSelectable="false"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/remarkText"
+                style="@style/DataEntryTextStyle3"
+                android:layout_marginTop="10dp"
+                android:background="@android:drawable/editbox_background_normal"
+                android:cursorVisible="true"
+                android:editable="true"
+                android:hint="Add remark"
+                android:imeOptions="actionDone"
+                android:paddingLeft="20dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

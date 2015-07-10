@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textselectdate"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/azure"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="3dp"
+        android:text="Select Date"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/flayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textselectdate"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical"
+        android:padding="30dp" >
+
+        <TextView
+            android:id="@+id/fromDatetext"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:background="@android:drawable/editbox_background_normal"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="From Date"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:visibility="visible" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/blayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/flayout"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical"
+        android:paddingBottom="20dp"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:paddingTop="0dp" >
+
+        <TextView
+            android:id="@+id/toDatetext"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:background="@android:drawable/editbox_background_normal"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="To Date"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:visibility="visible" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textselectstags"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/blayout"
+        android:background="@color/azure"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="3dp"
+        android:text="Select Stage"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textselectstags"
+        android:divider="#808080"
+        android:dividerHeight="1dp"
+        android:footerDividersEnabled="true"
+        android:headerDividersEnabled="true"
+        android:overScrollMode="always"
+        android:visibility="visible" />
+
+</RelativeLayout>

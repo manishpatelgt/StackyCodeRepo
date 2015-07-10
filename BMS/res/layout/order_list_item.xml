@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="90dp"
+    android:background="@drawable/list_selector"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="10dp">
+    
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp">
+
+        <TextView
+            android:id="@+id/textOrderNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="10dp"
+            android:singleLine="true"
+            android:text="OrderNo"
+            android:textColor="@color/blackbase"
+            android:textSize="20sp"></TextView>
+
+        <TextView
+            android:id="@+id/customerName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textOrderNo"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="10dp"
+            android:singleLine="true"
+            android:text="CustomerName"
+            android:textColor="@color/blackbase"
+            android:textSize="16sp"></TextView>
+        
+          <TextView
+            android:id="@+id/amountText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/customerName"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="10dp"
+            android:singleLine="true"
+            android:text="CustomerName"
+            android:textColor="@color/blackbase"
+            android:textSize="16sp"></TextView>
+          
+    </RelativeLayout>
+</LinearLayout>

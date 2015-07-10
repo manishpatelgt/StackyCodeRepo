@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/notes"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:isScrollContainer="true" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/quantity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/orderlayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="visible" >
+
+                    <TextView
+                        android:id="@+id/textOrder"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@color/azure"
+                        android:gravity="center"
+                        android:padding="3dp"
+                        android:text="Item Name"
+                        android:textColor="@color/white"
+                        android:textSize="17sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/itemText"
+                        style="@style/DataEntryTextStyle2"
+                        android:layout_marginTop="10dp"
+                        android:background="@android:drawable/editbox_background_normal"
+                        android:cursorVisible="false"
+                        android:editable="false" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/colorCodelayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingTop="10dp"
+                    android:visibility="visible" >
+
+                    <TextView
+                        android:id="@+id/textColorCode"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@color/azure"
+                        android:gravity="center"
+                        android:padding="3dp"
+                        android:text="Select Color Code"
+                        android:textColor="@color/white"
+                        android:textSize="17sp"
+                        android:textStyle="bold" />
+
+                    <Spinner
+                        android:id="@+id/spinnerColorCode"
+                        style="@style/BlueSpinnerStyle2"
+                        android:layout_marginTop="15dp"
+                        android:paddingTop="15dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:focusableInTouchMode="true"
+                    android:orientation="vertical"
+                    android:paddingTop="10dp" >
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@color/azure"
+                        android:gravity="center"
+                        android:padding="3dp"
+                        android:text="Qyt/Groose"
+                        android:textColor="@color/white"
+                        android:textSize="17sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/quantityText"
+                        style="@style/DataEntryTextStyle2"
+                        android:layout_marginTop="5dp"
+                        android:background="@android:drawable/editbox_background_normal"
+                        android:cursorVisible="true"
+                        android:hint="Enter Quantity"
+                        android:imeOptions="actionDone"
+                        android:inputType="number" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:focusableInTouchMode="true"
+                    android:orientation="vertical"
+                    android:paddingTop="10dp" >
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@color/azure"
+                        android:gravity="center"
+                        android:padding="3dp"
+                        android:text="Pack"
+                        android:textColor="@color/white"
+                        android:textSize="17sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/packText"
+                        style="@style/DataEntryTextStyle2"
+                        android:layout_marginTop="5dp"
+                        android:background="@android:drawable/editbox_background_normal"
+                        android:cursorVisible="false"
+                        android:editable="false"
+                        android:hint="Packs" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/rate"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@color/azure"
+                        android:gravity="center"
+                        android:padding="3dp"
+                        android:text="Rate"
+                        android:textColor="@color/white"
+                        android:textSize="17sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/RateText"
+                        style="@style/DataEntryTextStyle2"
+                        android:layout_marginTop="5dp"
+                        android:background="@android:drawable/editbox_background_normal"
+                        android:cursorVisible="false"
+                        android:editable="false"
+                        android:hint="Rate" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/amount"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@color/azure"
+                        android:gravity="center"
+                        android:padding="3dp"
+                        android:text="Amount"
+                        android:textColor="@color/white"
+                        android:textSize="17sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/AmountText"
+                        style="@style/DataEntryTextStyle2"
+                        android:layout_marginTop="5dp"
+                        android:background="@android:drawable/editbox_background_normal"
+                        android:cursorVisible="false"
+                        android:editable="false"
+                        android:hint="Amount" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center_horizontal|top"
+                    android:orientation="horizontal" >
+
+                    <Button
+                        android:id="@+id/buttonUpdate"
+                        style="@style/DailogButton"
+                        android:text="Save" />
+
+                    <Button
+                        android:id="@+id/buttonCancel"
+                        style="@style/DailogButton"
+                        android:layout_toRightOf="@+id/buttonUpdate"
+                        android:text="Cancel" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

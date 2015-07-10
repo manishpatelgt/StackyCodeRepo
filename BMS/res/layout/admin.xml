@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_activity"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textuserName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:text="MD"
+            android:textColor="@color/white"
+            android:textIsSelectable="false"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        android:gravity="center" >
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:minHeight="150dp" >
+
+            <Button
+                android:id="@+id/gotoOrderButton"
+                style="@style/MainMenuButtonNew"
+                android:background="@drawable/selector"
+                android:onClick="mainMenuButtonClick"
+                android:text="@string/mainmenu_order"
+                android:textSize="30dp" />
+
+            <Button
+                android:id="@+id/gototodayorderebutton"
+                style="@style/MainMenuButtonNew"
+                android:background="@drawable/selector"
+                android:enabled="true"
+                android:onClick="mainMenuButtonClick"
+                android:text="@string/mainmenu_today_order"
+                android:textSize="30dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:minHeight="150dp" >
+
+            <Button
+                android:id="@+id/gotopendingorderebutton"
+                style="@style/MainMenuButtonNew"
+                android:background="@drawable/selector"
+                android:enabled="true"
+                android:onClick="mainMenuButtonClick"
+                android:text="@string/mainmenu_pending_order"
+                android:textSize="30dp" />
+
+            <Button
+                android:id="@+id/allorderbutton"
+                style="@style/MainMenuButtonNew"
+                android:background="@drawable/selector"
+                android:enabled="true"
+                android:onClick="mainMenuButtonClick"
+                android:text="@string/mainmenu_order2"
+                android:textSize="30dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:minHeight="150dp" >
+
+            <Button
+                android:id="@+id/button5"
+                style="@style/MainMenuButtonNew"
+                android:background="@drawable/selector"
+                android:enabled="false"
+                android:onClick="mainMenuButtonClick"
+                android:text="Button5"
+                android:textSize="30dp" />
+
+            <Button
+                android:id="@+id/logoutbutton"
+                style="@style/MainMenuButtonNew"
+                android:background="@drawable/selector"
+                android:enabled="true"
+                android:onClick="mainMenuButtonClick"
+                android:text="@string/mainmenu_logout"
+                android:textSize="30dp" />
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>
