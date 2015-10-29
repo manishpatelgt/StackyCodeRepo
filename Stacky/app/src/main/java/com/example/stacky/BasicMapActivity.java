@@ -60,7 +60,7 @@ public class BasicMapActivity extends FragmentActivity{
 	Marker Contactloc;
 	LatLng contactLoc;
 	Button ib_back;
-	private String[] items = {getResources().getString(R.string.app_name)};
+	//private String[] items = {getResources().getString(R.string.app_name)};
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {

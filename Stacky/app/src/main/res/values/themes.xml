@@ -23,5 +23,10 @@
     </style>
     
       <style name="AppBaseTheme2" parent="@android:Theme.Black.NoTitleBar"></style>
-    
+
+    <!-- Base application theme. -->
+    <style name="AppTheme2" parent="Theme.AppCompat.Light">
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="windowActionBarOverlay">true</item>
+    </style>
 </resources>

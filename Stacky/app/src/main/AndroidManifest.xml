@@ -40,8 +40,24 @@
         android:label="Stacky"
         android:largeHeap="true"
         android:theme="@style/AppTheme" >
+
         <activity
-            android:name=".GroupNotificationActivity"
+            android:name=".MainActivity3"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="Stacky"
+            android:uiOptions="splitActionBarWhenNarrow"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme2" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+        <!--<activity
+            android:name=".BasicMapActivity"
             android:configChanges="keyboardHidden|orientation"
             android:label="Stacky"
             android:screenOrientation="portrait"
@@ -51,7 +67,7 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
+        </activity>-->
 
         <!--
         <activity
@@ -68,27 +84,11 @@
             </intent-filter>
         </activity>
 
-
-        -->
-        <activity
-            android:name="com.example1.MainActivity"
-            android:configChanges="keyboardHidden|orientation"
-            android:excludeFromRecents="true"
-            android:label="Photos"
-            android:screenOrientation="portrait" >
-        </activity>
-        <activity
-            android:name="com.example1.Credit"
-            android:label="Credit goes to" >
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example1.MainActivity" />
-        </activity>
         <activity
             android:name=".NotificationOne"
             android:configChanges="keyboardHidden|orientation"
             android:screenOrientation="portrait" >
-        </activity>
+        </activity>-->
 
         <receiver android:name="com.example.stacky.ScheduledMaintenanceReceiver" >
             <intent-filter>
